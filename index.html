@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><i class="fas fa-building"></i> Empresa Sebi</div>
+  <div>
+    <a href="#formulario"><i class="fas fa-envelope"></i> Contacto</a>
+    <a href="sobrenosotros.html"><i class="fas fa-info-circle"></i> Sobre Nosotros</a>
+    <a href="ubicacion.html"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Contáctanos</h1>
+  <p>Estamos aquí para ayudarte. Por favor, completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+
+  <form action="#" method="post" id="formulario" aria-labelledby="form-title">
+    <div class="form-group">
+      <i class="fas fa-user"></i>
+      <label for="name" class="required-label">Nombre</label>
+      <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required aria-required="true">
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-envelope"></i>
+      <label for="email" class="required-label">Correo Electrónico</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required aria-required="true">
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-calendar-alt"></i>
+      <label for="age">Edad</label>
+      <input type="number" id="age" name="age" min="18" max="99" step="1" placeholder="18-99 años">
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-palette"></i>
+      <label for="color">Selecciona tu color favorito</label>
+      <input type="color" id="color" name="color">
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-star"></i>
+      <label for="range">Nivel de satisfacción</label>
+      <input type="range" id="range" name="range" min="0" max="10" step="1" oninput="updateRange(this.value)">
+      <div class="range-output" id="range-output">5</div>
+    </div>
+
+    <div class="form-group">
+      <i class="fas fa-comment"></i>
+      <label for="comments">Comentarios</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Escribe tus comentarios..."></textarea>
+    </div>
+
+    <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+  </form>
+</div>
+
+<footer>
+  &copy; 2024 Empresa Ejemplo. Todos los derechos reservados.
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
